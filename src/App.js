@@ -55,9 +55,7 @@ function App() {
 
   const toggleModal = () => setModalOpen(!isModalOpen);
   const updateTooltipCoords = (button) => {
-    console.log(button);
     const rect = button.getBoundingClientRect();
-    console.log(rect);
     setCoords({
       left: rect.x + rect.width / 2,
       top: rect.bottom + window.scrollY,
